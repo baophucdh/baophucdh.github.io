@@ -1,0 +1,22 @@
+.w3-quarter {
+    position: relative;
+    overflow: hidden;
+}
+
+.w3-quarter img {
+    transition: transform 0.3s ease;
+}
+
+.w3-quarter:hover img {
+    transform: scale(1.05);
+}
+
+#food .w3-quarter h3,
+#food .w3-quarter p {
+  color: #777;
+}
+
+#food .w3-quarter:hover h3,
+#food .w3-quarter:hover p {
+  color: #4d2800;
+}
