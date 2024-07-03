@@ -11,11 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
     <style>
+        * {
+            color: #4d2800;
+        }
+
         body,
         h1,
         h2,
@@ -33,7 +37,7 @@
         .w3-container h1 {
             font-family: "Petemoss", cursive;
             font-size: 120px;
-            font-weight: 400;
+            font-weight: 600;
             font-style: normal;
         }
     </style>
@@ -43,7 +47,7 @@
 
     <!-- Sidebar (hidden by default) -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
-        style="display: none; z-index: 2; width: 15%; min-width: 300px" id="mySidebar">
+        style="display: none; z-index: 2; width: 15%; min-width: 150px" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
         <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
@@ -51,10 +55,9 @@
 
     <!-- Top menu -->
     <div class="w3-top">
-        <div class="w3-white w3-xlarge" style="max-width: 1200px; margin: auto">
-            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-            <div class="w3-right w3-padding-16">Mail</div>
-            <div class="w3-center w3-padding-16">PhucNguyen's Food Blog</div>
+        <div class="w3-white w3-xlarge" style="margin:auto">
+          <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+          <div class="w3-center w3-padding-16" style="font-size: 35px;"><b>PhucNguyen's Food Blog</b></div>
         </div>
     </div>
 
@@ -63,9 +66,9 @@
         <!-- Phở Bò -->
         <div class="w3-container w3-padding-32 w3-center">
             <h1>Phở Bò</h1>
-            <img src="images/Pho.jpg" alt="Phở Bò" style="width: 100%; height: auto;">
+            <img src="../images/phobo.jpg" alt="Phở Bò" style="width: 100%; height: auto;">
             <p>Phở bò là món ăn truyền thống của Việt Nam với hương vị thơm ngon, đậm đà từ nước dùng và thịt bò mềm
-                mại. Đây là một trong những món ăn nổi tiếng nhất của ẩm thực Việt Nam và đã được biết đến trên toàn thế
+                mại. Đây là một trong những món ăn nổi tiếng nhất của ẩm thực Việt Nam và được biết đến trên toàn thế
                 giới.</p>
         </div>
 
@@ -100,7 +103,7 @@
 
         <!-- About Section -->
         <div class="w3-container w3-padding-32 w3-center">
-            <h3>About Me, The Food Man</h3><br>
+            <h3>About Me, A Food Enthusiast</h3><br>
             <div class="w3-padding-20">
                 <h4><b>I am Who I Am!</b></h4>
                 <h6><i>Với niềm đam mê thực sự về ẩm thực</i></h6>
@@ -117,48 +120,30 @@
         <!-- Footer -->
         <footer class="w3-row-padding w3-padding-32">
             <div class="w3-third">
-                <h3>FOOTER</h3>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-                <p>Made with <a href="https://www.w3schools.com/spaces" target="_blank">W3Schools Spaces</a></p>
+                <h3>About Us</h3>
+                <p>Chào mừng bạn đến với Food Blog, nơi chia sẻ những công thức nấu ăn ngon và những trải nghiệm ẩm thực
+                    đặc sắc!</p>
+                <p>Hãy cùng khám phá các món ăn độc đáo của chúng tôi!</p>
             </div>
 
             <div class="w3-third">
-                <h3>BLOG POSTS</h3>
+                <h3>Latest Recipes</h3>
                 <ul class="w3-ul w3-hoverable">
                     <li class="w3-padding-16">
-                        <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right"
-                            style="width: 50px">
-                        <span class="w3-large">Lorem</span><br>
-                        <span>Sed mattis nunc</span>
+                        <span class="w3-large">Phở Bò</span><br>
+                        <span>Món ăn truyền thống của Việt Nam</span>
                     </li>
                     <li class="w3-padding-16">
-                        <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right"
-                            style="width: 50px">
-                        <span class="w3-large">Ipsum</span><br>
-                        <span>Praes tinci sed</span>
+                        <span class="w3-large">Bánh Mì</span><br>
+                        <span>Đặc sản đường phố Sài Gòn</span>
                     </li>
                 </ul>
             </div>
 
-            <div class="w3-third w3-serif">
-                <h3>POPULAR TAGS</h3>
-                <p>
-                    <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span
-                        class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-                </p>
+            <div class="w3-third w3-right w3-padding-left">
+                <h3>Contact Us</h3>
+                <p>Email: phucnguyen@foodblog.com</p>
+                <p>Điện thoại: +84 123 456 789</p>
             </div>
         </footer>
 
